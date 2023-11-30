@@ -1,0 +1,17 @@
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.after {width: 55%; background-color: #00005b;}
+.ilustrator {width: 80%; background-color: rgb(54, 0, 0);}
+.photoshop {width: 65%; background-color: rgb(2, 30, 54);}
+.indesing {width: 40%; background-color: rgb(73, 3, 21);}
