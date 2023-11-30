@@ -1,0 +1,212 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="Imagenes.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="blur-background.css">
+</head>
+<body>
+
+  <div id="contenedor">
+
+      <header id="subir">
+          <h1 id="logo">github</h1>
+      </header>
+      <nav>
+          <ul>
+              <li><a href="Bienvenida.html" target="_blank">Home</a></li>
+              <li><a href="#quien-soy">Quien soy</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+          </ul>
+      </nav>
+
+<div class="bg-image"></div>
+<div class="bg-text">
+  <h1>Soy Luis Guillermo Rodríguez</h1>
+  <p>y este es mi portfolio de diseñador</p>
+</div>
+
+     <section id="¿quien-soy?">
+        <h2 id="quien-soy">"¿Quien soy?"</h2>
+        <div id="info"> <div>
+          <a href="http://davinci.edu.ar" target="_blank">
+          <img src="Imagenes/Foto.jpg" alt="Foto-Luis-G-Rodriguez">
+       </a></div>
+          <p id="texto">Mi nombre es Luis Guillermo Rodríguez, tengo 25 años, soy venezolano, estudio en la primera escuela de arte multimedial Da Vinci, actualmente curso el tercer cuatrimestre en la carrera de Diseño Gráfico en Buenos Aires, Argentina.
+            Mis intereses estan en la animación y los videojuegos. Mi nivel de inglés es medio.</p>
+      </section>
+
+   <section>            
+    <h2 id="servicios">Servicios</h2><div id="informacion">
+      <h1>Mis Habilidades</h1>
+        <p>After Efects</p>
+          <div class="container">
+            <div class="skills after">55%</div>
+          </div>
+    <p>Ilustrator</p>
+    <div class="container">
+      <div class="skills ilustrator">80%</div>
+    </div>
+    
+    <p>Photoshop</p>
+    <div class="container">
+      <div class="skills photoshop">75%</div>
+    </div>
+    
+    <p>Indesing</p>
+    <div class="container">
+      <div class="skills indesing">40%</div>
+    </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+        <H2 id="contenedor">Portfolio</H2>
+
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 10</div>
+          <img src="imagenes/TP1 Ilustración digital Final-01.jpg" style="width:100%">
+          <div class="text">TP1 Ilustración Digital</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 10</div>
+          <img src="imagenes/Rodríguez Luis Guillermo TP3 (Final).jpg" style="width:100%">
+          <div class="text">TP FINAL Tratamiento Digital de la Imagen 1</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 10</div>
+          <img src="imagenes/Mockup El hobbit.jpg" style="width:100%">
+          <div class="text">TP3 Introducción al Diseño</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="imagenes/Mockup cuaderno Rojo, Verde, Gris trama.jpg" style="width:100%">
+            <div class="text">TP3 Morfología 1</div>
+          </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="imagenes/Variable visual Alfabeto Pixel-Uncial.jpg" style="width:100%">
+            <div class="text">TP3 Lenguaje Visual</div>
+        </div>
+          
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="imagenes/Naipes TP3.jpg" style="width:100%">
+            <div class="text">TP3 Tipografía</div>
+        </div>
+          
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="imagenes/TP2_Rodriguez_Luis4.jpg" style="width:100%">
+            <div class="text">TP2 Diseño Editorial</div>
+        </div>
+          
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="imagenes/Rodríguez_Luis_Final_Export.jpg" style="width:100%">
+            <div class="text">TP FINAL Tratamiento Digital de la Imagen 2</div>
+        </div>
+          
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="imagenes/TP2 Morfología 2.jpg" style="width:100%">
+            <div class="text">TP2 Morfología 2</div>
+        </div>
+          
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="imagenes/Packaging 2.jpg" style="width:100%">
+            <div class="text">TP3 Marcas y Envases</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+</section>
+
+    <section>
+        <h2 id="contacto">Contacto</h2>
+        <div id="contenedor">
+            <section> <Form action="mailto:luis.rodriguez@davinci.edu.ar" method="post">
+    
+                <label>Nombre*:
+                    <input type="text" name="nombre">     
+                </label>
+                <label>Apellido*:
+                    <input type="text" name="apellido">
+                </label>
+                <label>DNI:
+                    <input type="text" name="DNI">
+                </label>
+                <label>Teléfono:
+                    <input type="tel" name="Teléfono">
+                </label>
+                <label>E-mail*:
+                    <input type="email" name="e-mail">
+                </label>
+                <label>Comentarios:
+                    <textarea name="comentarios" cols="30" rows="10"></textarea>
+                </label>
+                
+                <input type="reset" value="Reiniciar">
+                <input type="submit" value="Enviar este Formulario">
+        
+            </Form></section><!--Comentario para arreglar--><aside></aside>
+    
+        </section>
+            <footer></footer>
+
+<!-- Botón de subir. Usar sólo en caso de no aplicar botonera con sticky o cabecera fija. Sería innecesario en tal caso. -->
+        <div id="botoncito"><p><a href="#subir">SUBIR</a></p></div>
+<!-- Fin del botón -->
+    </div>
+</body>
+</html>
